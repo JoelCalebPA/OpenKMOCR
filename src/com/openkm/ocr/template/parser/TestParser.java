@@ -23,7 +23,8 @@ public class TestParser implements OCRTemplateParser {
 
 	@Override
 	public Object parse(OCRTemplateField otf, String text) throws OCRTemplateException, OCRParserEmptyValueException {
-		log.info("extracted text\n"+text);
+		log.info("extracted text\n" + text);
+		
 		if (text == null || text.equals("")) {
 			throw new OCRParserEmptyValueException("Empty value");
 		}

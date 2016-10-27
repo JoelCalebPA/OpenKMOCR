@@ -45,7 +45,8 @@ public class ControlTestParser implements OCRTemplateControlParser {
 	
 	@Override
 	public boolean parse(OCRTemplateControlField otf, String text) throws OCRTemplateException, OCRParserEmptyValueException {
-		log.info("extracted text\n"+text);
+		log.info("extracted text\n" + text);
+		
 		if (text == null || text.equals("")) {
 			return false;
 		} else {
